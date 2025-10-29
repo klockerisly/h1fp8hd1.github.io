@@ -1,4 +1,4 @@
-const baseUrl = 'http://api.mu.ws', defaultOptions = {duration: 4000, showClose: true, showProgress: true, position: 'top-right'},
+const baseUrl = 'https://v2.jqei.store', defaultOptions = {duration: 4000, showClose: true, showProgress: true, position: 'top-right'},
     iconMap = {
         success: '<i class="fas fa-check"></i>',
         error: '<i class="fa fa-times"></i>',
