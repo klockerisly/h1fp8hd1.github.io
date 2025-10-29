@@ -557,3 +557,83 @@ body{background-color:var(--secondary-color);color:var(--text-dark);line-height:
 .s-s-select-options::-webkit-scrollbar{width:4px}
 .s-s-select-options::-webkit-scrollbar-track{background:#f1f1f1}
 .s-s-select-options::-webkit-scrollbar-thumb{background:#c1c1c1;border-radius:2px}
+
+
+
+@media (max-width: 768px) {
+    .category-modal {
+        width: 95%;
+        max-height: 90vh;
+        margin: 10px;
+        padding: 15px;
+        overflow: hidden; /* 禁止弹层自身滚动 */
+    }
+    
+    .category-grid {
+        grid-template-columns: 1fr; /* 单列布局 */
+        gap: 12px;
+        max-height: none; /* 移除高度限制 */
+        overflow: visible; /* 确保内容可见 */
+    }
+    
+    .category-card {
+        height: 100px; /* 进一步减小高度 */
+        padding: 12px 10px;
+        min-height: 100px; /* 确保最小高度 */
+    }
+    
+    .category-header {
+        margin-bottom: 8px;
+    }
+    
+    .category-title {
+        font-size: 1rem; /* 减小字体 */
+    }
+    
+    .category-desc {
+        font-size: 0.75rem; /* 减小描述字体 */
+        margin: 5px 0 8px 0;
+        line-height: 1.3;
+        display: -webkit-box;
+        -webkit-line-clamp: 2; /* 限制描述为2行 */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+    
+    .category-btn {
+        padding: 4px 10px;
+        font-size: 0.7rem;
+        margin-top: auto; /* 按钮靠底部 */
+    }
+    
+    .category-icon {
+        font-size: 1.2rem;
+        margin-right: 8px;
+    }
+}
+
+/* 针对小屏幕手机的进一步优化 */
+@media (max-width: 480px) {
+    .category-modal {
+        padding: 12px 10px;
+    }
+    
+    .category-card {
+        height: 90px;
+        padding: 10px 8px;
+    }
+    
+    .category-title {
+        font-size: 0.9rem;
+    }
+    
+    .category-desc {
+        font-size: 0.7rem;
+        -webkit-line-clamp: 2; /* 确保最多2行 */
+    }
+    
+    .category-modal-name {
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+    }
+}
